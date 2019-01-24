@@ -7,7 +7,7 @@ window.onload = function () {
 
 //user's rocket
 const user = {
-    x:-,
+    x: 0,
     y: document.documentElement.clientHeight/2-100/2,
     width: 10,
     height: 100,
