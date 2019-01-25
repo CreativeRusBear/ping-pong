@@ -2,31 +2,31 @@
 const canvas = document.getElementById('canvas'),
       ctx = canvas.getContext('2d');
 window.onload = function () {
-    console.log(user)
+    renderer();
 };
 
 //user's rocket
 const user = {
     x: 0,
-    y: document.documentElement.clientHeight/2-100/2,
-    width: 10,
-    height: 100,
+    y: canvas.height/2-200/2,
+    width: 20,
+    height: 200,
     color: 'white',
     score: 0
 },
 //computer's rocket
 comp = {
-    x:document.documentElement.clientWidth-10,
-    y: document.documentElement.clientHeight/2-100/2,
-    width: 10,
-    height: 100,
+    x:canvas.width-20,
+    y: canvas.height/2-200/2,
+    width: 20,
+    height: 200,
     color: 'white',
     score: 0
 },
 ball ={
-    x: document.documentElement.clientWidth/2,
-    y: document.documentElement.clientHeight/2,
-    r: 10,
+    x: canvas.width/2,
+    y: canvas.height/2,
+    r: 15,
     speed: 5,
     velocityX: 5,
     velocityY: 5,
@@ -47,24 +47,37 @@ function drawCircle(x,y,r,color) {
 
 function drawText(x,y,text,color) {
     ctx.fillStyle=color;
-    ctx.font='45px century gothic'
+    ctx.font='45px century gothic';
     ctx.fillText(text,x,y);
+}
+
+function drawNet(lineWidth,space,color) {
+    ctx.strokeStyle = color;
+    ctx.lineWidth=3;
+    ctx.beginPath();
+    ctx.setLineDash([lineWidth,space]);
+    ctx.moveTo(canvas.width/2, 0);
+    ctx.lineTo(canvas.width/2, canvas.height);
+    ctx.stroke();
+    // ctx.closePath();
 }
 
 //function for render
 function renderer(){
-    canvas.setAttribute('width', document.documentElement.clientWidth);
-    canvas.setAttribute('height', document.documentElement.clientHeight);
+    //draw field
     drawRect(0,0, canvas.width, canvas.height,'black');
-    drawNet();
-    drawText(ctx.width/4,ctx.height/5, user.score, 'white');
+    //draw net
+    drawNet(25,10,'white');
+    //draw score
+    drawText(canvas.width/4,canvas.height/5, user.score, 'white');
+    drawText(3*canvas.width/4,canvas.height/5, comp.score, 'white');
+
+
+
+    //draw ball
+    drawCircle(ball.x, ball.y, ball.r, 'white');
+    //draw rockets
+    drawRect(user.x, user.y, user.width, user.height, 'white');
+    drawRect(comp.x, comp.y, comp.width, comp.height, 'white');
 }
-//settings for canvas's window
-canvas.setAttribute('width', document.documentElement.clientWidth);
-canvas.setAttribute('height', document.documentElement.clientHeight);
-drawRect(0,0, canvas.width, canvas.height,'black');
-
-drawCircle(50,50,10,'white');
-drawText(200,300,'Some Text', 'white');
-
 
