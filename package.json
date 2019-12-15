@@ -1,24 +1,58 @@
 {
-  "name": "test",
+  "name": "Ping-Pong",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ping-Pong PWA (Progressive Web Application)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open"
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js --open",
+    "build": "webpack --config build/webpack.build.conf.js",
+    "docs": "jsdoc -c jsdoc.json"
   },
-  "author": "CreativeRusBear",
-  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "not ie <= 8",
+    "last 15 versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreativeRusBear/ping-pong.git"
+  },
+  "keywords": [
+    "Ping-pong",
+    "JavaScript",
+    "Game",
+    "PWA",
+    "Progressive Web Application"
+  ],
+  "author": "Artem Gusev <gusev2014russia@mail.ru> (CreativeRusBear)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CreativeRusBear/ping-pong/issues"
+  },
+  "homepage": "https://github.com/CreativeRusBear/ping-pong#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.7.2",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^3.2.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.7.2",
+    "file-loader": "^4.3.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "jsdoc": "^3.6.3",
+    "mini-css-extract-plugin": "^0.8.0",
     "path": "^0.12.7",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   }
 }
