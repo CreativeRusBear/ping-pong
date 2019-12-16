@@ -25,8 +25,8 @@
 
 ## Introduction
 
-**Ping-Pong ** is computer video game, written using Canvas. 
-It's a Progressive Web Application (PWA), that allows you to install it as a Native Application on your device. It also allows you to play offline (without network connection).
+**Ping-Pong ** is computer video game, written using `Canvas`. 
+It's a `Progressive Web Application` (`PWA`), that allows you to install it as a Native Application on your device. It also allows you to play offline (without network connection).
 
 ## About application
 
@@ -34,9 +34,8 @@ This application is created using :bookmark_tabs: :
  * `HTML` - hypertext markup language;
  * `CSS` - style sheet language;
  * `JavaScript` - programming language;
- * `Web App Manifest` - is a JSON document that provides application metadata for Progressive Web Apps;
- * `Service Worker` - is an event-driven worker registered against an origin and a path. It takes the form of a JavaScript file that can control the web-page/site that it is associated with, intercepting and modifying navigation and resource requests, and caching resources in a very granular fashion to give you complete control over how your app behaves in certain situations (the most obvious one being when the network is not available).;
-
+ * `Web App Manifest` - is a `JSON` document that provides application metadata for `Progressive Web Apps`;
+ * `Service Worker` - is an event-driven worker registered against an origin and a path. It takes the form of a `JavaScript` file that can control the web-page/site that it is associated with, intercepting and modifying navigation and resource requests, and caching resources in a very granular fashion to give you complete control over how your app behaves in certain situations (the most obvious one being when the network is not available).;
  
 ## Instructions :clipboard:
 
@@ -44,7 +43,7 @@ You can play in the browser or install it as a Native Application.
 
 I will describe two methods in details.
 
-1. Click on [this link](https://creativerusbear.github.io/ping-pong/) or copy url ```https://creativerusbear.github.io/ping-pong/``` and paste it in necessary field in the browser
+1. Click on [this link](https://creativerusbear.github.io/ping-pong/) or copy url `https://creativerusbear.github.io/ping-pong/` and paste it in necessary field in the browser
 
 2. If you want install it as Native Application, click on `+` button
 
