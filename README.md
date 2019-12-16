@@ -25,7 +25,7 @@
 
 ## Introduction
 
-**Ping-Pong ** is computer video game, written using `Canvas`. 
+**Ping-Pong** is computer video game, written using `Canvas`. 
 It's a `Progressive Web Application` (`PWA`), that allows you to install it as a Native Application on your device. It also allows you to play offline (without network connection).
 
 ## About application
@@ -48,6 +48,7 @@ I will describe two methods in details.
 2. If you want install it as Native Application, click on `+` button
 
 3. After that, you can see next window:
+
 ![install_app](https://user-images.githubusercontent.com/37180024/70933477-1b407080-204d-11ea-84a5-14cdfceac500.png)
 
 4. It allows you to install this application as Native on your device
