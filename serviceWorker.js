@@ -1,7 +1,7 @@
 const staticAssets = [
 	'./index.html',
 	'./dist/img/favicon.ico',
-	'./dist/css/style.css',
+	'./dist/css/app.css',
 	'./dist/js/index.js',
 ];
 
