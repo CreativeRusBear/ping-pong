@@ -1,6 +1,6 @@
 /**
- * @author v2.0.0
- * @version Artem Gusev <gusev2014russia@mail.ru> (CreativeRusBear)
+ * @author Artem Gusev <gusev2014russia@mail.ru> (CreativeRusBear)
+ * @version v2.0.0
  * @copyright Artem Gusev 2019
  * @licence
  * MIT License
