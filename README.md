@@ -61,6 +61,16 @@ Great! :sparkles: You are install application on your device.
 
 You can find the Ping-Pong documentation [on the website](https://creativerusbear.github.io/ping-pong/docs/).
 
+## Changelog
+
+Detailed changes for each release are documented in the [release notes](CHANGELOG.md).
+
+## Contributing
+
+I'm thanks all the people, that who contributed or who want to contribute to "Ping-Pong" project.
+
+If you want to contribute, make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request, thanks.
+
 ## License
 
 **Ping-Pong** is open-sourced software licensed under the MIT License (MIT). Please see [License File](LICENSE) for more information
