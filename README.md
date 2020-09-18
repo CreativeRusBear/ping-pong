@@ -9,7 +9,6 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/CreativeRusBear/ping-pong)
 ![GitHub](https://img.shields.io/github/license/CreativeRusBear/ping-pong)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/CreativeRusBear/ping-pong)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fcreativerusbear.github.io%2Fping-pong%2F)
 
 ```
  ____                                         ____                            
