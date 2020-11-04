@@ -74,20 +74,22 @@ module.exports={
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
 		}),
-		new copyWebpackPlugin([
-			{
-				from : `${paths.src}/manifest.json`,
-				to   : `${paths.dist}/manifest.json`,
-			},
-			{
-				from : `${paths.src}/serviceWorker.js`,
-				to   : `${paths.dist}/serviceWorker.js`,
-			},
-			{
-				from : `${paths.src}/img`,
-				to   : `${paths.dist}/img`,
-			},
-		]),
+		new copyWebpackPlugin({
+			patterns: [
+				{
+					from : `${paths.src}/manifest.json`,
+					to   : `${paths.dist}/manifest.json`,
+				},
+				{
+					from : `${paths.src}/serviceWorker.js`,
+					to   : `${paths.dist}/serviceWorker.js`,
+				},
+				{
+					from : `${paths.src}/img`,
+					to   : `${paths.dist}/img`,
+				},
+			]
+		}),
 		new ImageminPlugin({
 			interlaced  : true,
 			progressive : true,
