@@ -1,6 +1,5 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackInjector = require('html-webpack-injector');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const copyWebpackPlugin = require('copy-webpack-plugin');
@@ -63,14 +62,9 @@ module.exports={
 			cleanOnceBeforeBuildPatterns: [ path.resolve(__dirname, '../dist') ],
 		}),
 		new HTMLWebpackPlugin({
-			template: path.resolve(__dirname, '../src/index.html'),
-			filename: path.resolve(__dirname, '../dist/index.html'),
-     		chunks: ['index'],
-			chunksConfig: {          
-				defer: ['index']  
-			}
+			template: './src/index.html'
+     		
    		}),
-   		new HtmlWebpackInjector(),
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
 		}),
