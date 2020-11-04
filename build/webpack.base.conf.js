@@ -18,7 +18,7 @@ module.exports={
 		paths: paths,
 	},
 	entry: {
-		index: [ 'babel-polyfill', `${paths.src}/js/index.js` ],
+		index_head: [ 'babel-polyfill', `${paths.src}/js/index.js` ],
 	},
 	output: {
 		filename   : 'js/[name].bundle.js',
@@ -62,28 +62,26 @@ module.exports={
 			cleanOnceBeforeBuildPatterns: [ path.resolve(__dirname, '../dist') ],
 		}),
 		new HTMLWebpackPlugin({
-			template: './src/index.html'
-     		
+			template: path.resolve(__dirname, '../src/index.html'),
+			filename: path.resolve(__dirname, '../dist/index.html'),
    		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
 		}),
-		new copyWebpackPlugin({
-			patterns: [
-				{
-					from : `${paths.src}/manifest.json`,
-					to   : `${paths.dist}/manifest.json`,
-				},
-				{
-					from : `${paths.src}/serviceWorker.js`,
-					to   : `${paths.dist}/serviceWorker.js`,
-				},
-				{
-					from : `${paths.src}/img`,
-					to   : `${paths.dist}/img`,
-				},
-			]
-		}),
+		new copyWebpackPlugin([
+			{
+				from : `${paths.src}/manifest.json`,
+				to   : `${paths.dist}/manifest.json`,
+			},
+			{
+				from : `${paths.src}/serviceWorker.js`,
+				to   : `${paths.dist}/serviceWorker.js`,
+			},
+			{
+				from : `${paths.src}/img`,
+				to   : `${paths.dist}/img`,
+			},
+		]),
 		new ImageminPlugin({
 			interlaced  : true,
 			progressive : true,
