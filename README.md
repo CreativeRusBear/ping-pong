@@ -1,14 +1,14 @@
-![GitHub language count](https://img.shields.io/github/languages/count/CreativeRusBear/ping-pong)
-![GitHub top language](https://img.shields.io/github/languages/top/CreativeRusBear/ping-pong)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/CreativeRusBear/ping-pong)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CreativeRusBear/ping-pong)
-![GitHub repo size](https://img.shields.io/github/repo-size/CreativeRusBear/ping-pong)
-![GitHub issues](https://img.shields.io/github/issues/CreativeRusBear/ping-pong)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/CreativeRusBear/ping-pong)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/CreativeRusBear/ping-pong)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/CreativeRusBear/ping-pong)
-![GitHub](https://img.shields.io/github/license/CreativeRusBear/ping-pong)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/CreativeRusBear/ping-pong)
+![GitHub language count](https://img.shields.io/github/languages/count/corocoto/ping-pong)
+![GitHub top language](https://img.shields.io/github/languages/top/corocoto/ping-pong)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/corocoto/ping-pong)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/corocoto/ping-pong)
+![GitHub repo size](https://img.shields.io/github/repo-size/corocoto/ping-pong)
+![GitHub issues](https://img.shields.io/github/issues/corocoto/ping-pong)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/corocoto/ping-pong)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/corocoto/ping-pong)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/corocoto/ping-pong)
+![GitHub](https://img.shields.io/github/license/corocoto/ping-pong)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/corocoto/ping-pong)
 
 ```
  ____                                         ____                            
@@ -42,7 +42,7 @@ You can play in the browser or install it as a Native Application.
 
 I will describe two methods in details.
 
-1. Click on [this link](https://creativerusbear.github.io/ping-pong/) or copy url `https://creativerusbear.github.io/ping-pong/` and paste it in necessary field in the browser
+1. Click on [this link](https://corocoto.github.io/ping-pong/dist/) or copy url `https://corocoto.github.io/ping-pong/dist/` and paste it in necessary field in the browser
 
 2. If you want install it as Native Application, click on `+` button
 
@@ -58,7 +58,7 @@ Great! :sparkles: You are install application on your device.
 
 ## Documentation
 
-You can find the Ping-Pong documentation [on the website](https://creativerusbear.github.io/ping-pong/docs/).
+You can find the Ping-Pong documentation [on the website](https://corocoto.github.io/ping-pong/docs/).
 
 ## Changelog
 
