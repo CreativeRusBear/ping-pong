@@ -1,4 +1,7 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInjector = require('html-webpack-injector');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const copyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
@@ -6,22 +9,22 @@ const mozjpeg = require('imagemin-mozjpeg');
 const pngquant=require('imagemin-pngquant');
 require('babel-polyfill');
 
-const Paths ={
-	src  : path.join(__dirname, '../src'),
-	dist : path.join(__dirname, '../dist'),
+const paths ={
+	src  : path.resolve(__dirname, '../src'),
+	dist : path.resolve(__dirname, '../dist'),
 };
 
 module.exports={
 	externals: {
-		paths: Paths,
+		paths: paths,
 	},
 	entry: {
-		app: [ 'babel-polyfill', `${Paths.src}/js/index.js` ],
+		index: [ 'babel-polyfill', `${paths.src}/js/index.js` ],
 	},
 	output: {
-		filename   : 'index.js',
-		path       : `${Paths.dist}/js/`,
-		publicPath : '/dist/js',
+		filename   : 'js/[name].bundle.js',
+		path       : paths.dist,
+		publicPath : '.',
 	},
 	module: {
 		rules: [ {
@@ -49,20 +52,40 @@ module.exports={
 					loader  : 'postcss-loader',
 					options : {
 						sourceMap : true,
-						config    : {path: `${Paths.src}/js/postcss.config.js`},
+						config    : {path: `${paths.src}/js/postcss.config.js`},
 					},
 				},
 			],
 		} ],
 	},
 	plugins: [
+		new CleanWebpackPlugin({
+			cleanOnceBeforeBuildPatterns: [ path.resolve(__dirname, '../dist') ],
+		}),
+		new HTMLWebpackPlugin({
+			template: path.resolve(__dirname, '../src/index.html'),
+			filename: path.resolve(__dirname, '../dist/index.html'),
+     		chunks: ['index'],
+			chunksConfig: {          
+				defer: ['index']  
+			}
+   		}),
+   		new HtmlWebpackInjector(),
 		new MiniCssExtractPlugin({
-			filename: '../css/[name].css',
+			filename: 'css/[name].css',
 		}),
 		new copyWebpackPlugin([
 			{
-				from : `${Paths.src}/img`,
-				to   : `${Paths.dist}/img`,
+				from : `${paths.src}/manifest.json`,
+				to   : `${paths.dist}/manifest.json`,
+			},
+			{
+				from : `${paths.src}/serviceWorker.js`,
+				to   : `${paths.dist}/serviceWorker.js`,
+			},
+			{
+				from : `${paths.src}/img`,
+				to   : `${paths.dist}/img`,
 			},
 		]),
 		new ImageminPlugin({

@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/corocoto/ping-pong/issues"
   },
-  "homepage": "https://github.com/CreativeRusBear/ping-pong#readme",
+  "homepage": "https://github.com/corocoto/ping-pong#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
