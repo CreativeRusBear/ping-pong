@@ -18,7 +18,7 @@ module.exports={
 		paths: paths,
 	},
 	entry: {
-		index_head: [ 'babel-polyfill', `${paths.src}/js/index.js` ],
+		index: [ 'babel-polyfill', `${paths.src}/js/index.js` ],
 	},
 	output: {
 		filename   : 'js/[name].bundle.js',
