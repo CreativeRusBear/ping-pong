@@ -42,7 +42,7 @@ You can play in the browser or install it as a Native Application.
 
 I will describe two methods in details.
 
-1. Click on [this link](https://corocoto.github.io/ping-pong/dist/) or copy url `https://corocoto.github.io/ping-pong/dist/` and paste it in necessary field in the browser
+1. Click on [this link](https://corocoto.github.io/ping-pong/) or copy url `https://corocoto.github.io/ping-pong/` and paste it in necessary field in the browser
 
 2. If you want install it as Native Application, click on `+` button
 
@@ -55,10 +55,6 @@ I will describe two methods in details.
 5. Click `Install` button
 
 Great! :sparkles: You are install application on your device.
-
-## Documentation
-
-You can find the Ping-Pong documentation [on the website](https://corocoto.github.io/ping-pong/docs/).
 
 ## Changelog
 
