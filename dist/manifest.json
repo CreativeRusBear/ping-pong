@@ -4,7 +4,7 @@
   "theme_color": "#ffffff",
   "background_color": "#445360",
   "display": "standalone",
-  "start_url": "./ping-pong/",
+  "start_url": ".",
   "icons": [
     {
       "src": "img/icons/icon-72x72.png",
