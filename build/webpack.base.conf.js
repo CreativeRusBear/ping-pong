@@ -6,8 +6,6 @@ const copyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const mozjpeg = require('imagemin-mozjpeg');
 const pngquant=require('imagemin-pngquant');
-require('core-js/stable');
-require('regenerator-runtime/runtime');
 
 const paths ={
 	src  : path.resolve(__dirname, '../src'),
