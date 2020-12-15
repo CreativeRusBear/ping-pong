@@ -88,7 +88,6 @@ module.exports = {
 			],
 		}),
 		new HTMLWebpackPlugin({
-			template: `${paths.src}/index.html`,
             inject: 'body',
 		}),
 	],

@@ -1,6 +1,5 @@
 const {merge} = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.conf');
-const paths = require('./paths');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(baseWebpackConfig, {
@@ -8,7 +7,7 @@ module.exports = merge(baseWebpackConfig, {
     devtool: false,
     plugins: [
         new htmlWebpackPlugin({
-            template: paths.src + '/index.html',
+            inject: 'body',
             minify: true
         })
     ],
