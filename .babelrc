@@ -5,7 +5,7 @@
       {
         "modules": "commonjs",
         "useBuiltIns": "usage",
-        "corejs": "3.7"
+        "corejs": "3.8"
       }
     ]
   ]
