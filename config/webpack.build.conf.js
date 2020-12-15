@@ -1,6 +1,7 @@
 const {merge} = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.conf');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const paths = require('./paths');
 
 module.exports = merge(baseWebpackConfig, {
     mode: 'production',
@@ -8,7 +9,8 @@ module.exports = merge(baseWebpackConfig, {
     plugins: [
         new htmlWebpackPlugin({
             inject: 'body',
-            minify: true
+            minify: true,
+            template: `${paths.src}/index.html`
         })
     ],
     optimization: {
