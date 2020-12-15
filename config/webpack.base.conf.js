@@ -88,6 +88,7 @@ module.exports = {
 			],
 		}),
 		new HTMLWebpackPlugin({
+			title: 'Ping-Pong',
             inject: 'body',
 		}),
 	],

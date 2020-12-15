@@ -7,6 +7,7 @@ module.exports = merge(baseWebpackConfig, {
     devtool: false,
     plugins: [
         new htmlWebpackPlugin({
+            title: 'Ping-Pong',
             inject: 'body',
             minify: true
         })
