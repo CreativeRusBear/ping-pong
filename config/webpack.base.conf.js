@@ -15,7 +15,7 @@ module.exports = {
 	},
 	output: {
 		path: paths.dist,
-		filename: 'js/[contenthash:8].bundle.js',
+		filename: 'js/[name].bundle.js',
 	},
 	module: {
 		rules: [ 
