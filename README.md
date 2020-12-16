@@ -70,6 +70,17 @@ If you want to contribute, make sure to read the [Contributing Guide](CONTRIBUTI
 
 **Ping-Pong** is open-sourced software licensed under the MIT License (MIT). Please see [License File](LICENSE) for more information
 
+## Metrics
+
+* **Lighthouse**:
+
+![Lighthouse report](https://user-images.githubusercontent.com/37180024/102406524-bf138200-3ffb-11eb-9ef8-a38e7e0f0807.png)
+
+* **PageSpeed Insights**:
+
+![PageSpeed Insights](https://user-images.githubusercontent.com/37180024/102406634-ed915d00-3ffb-11eb-9d59-d7c29623c6f7.png)
+
+
 ## Conclusion
 
 If you still have questions about the work of this application :grey_question: or you have cool ideas for improvement :boom:, please write to me :email:.
