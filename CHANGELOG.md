@@ -6,7 +6,7 @@ This file describes notable changes in each version of **Ping-Pong** video game.
 
 ### Major changes
 
- + This application has become PWA
+ + This application has become PWA.
 
 
 ### Enhancements
@@ -17,3 +17,16 @@ This file describes notable changes in each version of **Ping-Pong** video game.
  + [ISSUE_TEMPLATE](.github/ISSUE_TEMPLATE) section has been written;
  +  [CONTRIBUTING.md](CONTRIBUTING.md) file has been  written; 
  + [README.md](README.md) file has been rewritten.
+
+ ## 2.0.1 (March 2021)
+
+ ### Patch changes
+
+ + Dependencies has been updated;
+ + `.babelrc` file has been updated.
+
+ ## 2.0.2 (March 2021)
+
+ ### Patch changes
+
+ + `name` attribute (inside `package.json` and `package.json` files) has been renamed to correct form.
