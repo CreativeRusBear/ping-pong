@@ -36,3 +36,9 @@ This file describes notable changes in each version of **Ping-Pong** video game.
 ### Enhancements
 
 + [`.editorconfig`](.editorconfig) file has been added. 
+
+## 2.0.4 (March 2021)
+
+### Patch changes
+
++ Description in the [`README.md`](README.md) file has been updated
