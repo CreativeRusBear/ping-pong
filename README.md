@@ -44,16 +44,16 @@ You can use this application in the browser or install it as a native applicatio
 I will describe each of this approaches in details:
 
 1. Click on [this link](https://corocoto.github.io/ping-pong/) or copy url `https://corocoto.github.io/ping-pong/` and paste it in the search field in the browser
-2. If you want to install it as a native application, you should to click on installation button (you can see it on the right side of search field): 
+2. You should to click on installation button (you can see it on the right side of search field), if you want to install it as a native application: 
 
 ![installation button](https://user-images.githubusercontent.com/37180024/111022601-b2c57800-83e4-11eb-81ea-1dcd86a7e21c.png)
 
-3. You can see same small window after clicking on installation button:
+3. You can see the same small window after clicking on installation button:
 
 ![image](https://user-images.githubusercontent.com/37180024/111022662-29fb0c00-83e5-11eb-87c2-f690f9dcd69a.png)
 
-4. It allows you to install this application as native on your devices.
-5. So... You should to click on `Install` button if you want to do it, or click on `Cancel` button for close this window.
+It allows you to install this application as native on your devices.
+So... You should to click on `Install` button if you want to do it, or click on `Cancel` button for close this window.
 
 ## Changelog
 
