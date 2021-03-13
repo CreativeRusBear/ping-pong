@@ -24,8 +24,9 @@
 
 ## Introduction
 
-**Ping-Pong** is computer video game, written using `Canvas`. 
-It's a `Progressive Web Application` (`PWA`), that allows you to install it as a Native Application on your device. It also allows you to play offline (without network connection).
+**Ping-Pong** is computer video game that written by using `Canvas` API. 
+
+It's also `Progressive Web Application` (`PWA`). So it allows you to install it as a native application on your devices. It also allows you to play in offline format (without network connection).
 
 ## About application
 
@@ -38,23 +39,21 @@ This application is created using :bookmark_tabs: :
  
 ## Instructions :clipboard:
 
-You can play in the browser or install it as a Native Application.
+You can use this application in the browser or install it as a native application (as I described earlier).
 
-I will describe two methods in details.
+I will describe each of this approaches in details:
 
-1. Click on [this link](https://corocoto.github.io/ping-pong/) or copy url `https://corocoto.github.io/ping-pong/` and paste it in necessary field in the browser
+1. Click on [this link](https://corocoto.github.io/ping-pong/) or copy url `https://corocoto.github.io/ping-pong/` and paste it in the search field in the browser
+2. If you want to install it as a native application, you should to click on installation button (you can see it on the right side of search field): 
 
-2. If you want install it as Native Application, click on `+` button
+![installation button](https://user-images.githubusercontent.com/37180024/111022601-b2c57800-83e4-11eb-81ea-1dcd86a7e21c.png)
 
-3. After that, you can see next window:
+3. You can see same small window after clicking on installation button:
 
-![install_app](https://user-images.githubusercontent.com/37180024/70933477-1b407080-204d-11ea-84a5-14cdfceac500.png)
+![image](https://user-images.githubusercontent.com/37180024/111022662-29fb0c00-83e5-11eb-87c2-f690f9dcd69a.png)
 
-4. It allows you to install this application as Native on your device
-
-5. Click `Install` button
-
-Great! :sparkles: You are install application on your device.
+4. It allows you to install this application as native on your devices.
+5. So... You should to click on `Install` button if you want to do it, or click on `Cancel` button for close this window.
 
 ## Changelog
 
@@ -62,13 +61,13 @@ Detailed changes for each release are documented in the [release notes](CHANGELO
 
 ## Contributing
 
-I'm thanks all the people, that who contributed or who want to contribute to "Ping-Pong" project.
+I'm thanks all the people who contributed or who want to contribute to "Ping-Pong" project :sparkles:
 
-If you want to contribute, make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request, thanks.
+If you want to contribute, make sure that you are read the [Contributing Guide](CONTRIBUTING.md) before making a pull request, thanks.
 
 ## License
 
-**Ping-Pong** is open-sourced software licensed under the MIT License (MIT). Please see [License File](LICENSE) for more information
+**Ping-Pong** is open-sourced software licensed under the MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 ## Metrics
 
@@ -83,7 +82,7 @@ If you want to contribute, make sure to read the [Contributing Guide](CONTRIBUTI
 
 ## Conclusion
 
-If you still have questions about the work of this application :grey_question: or you have cool ideas for improvement :boom:, please write to me :email:.
+If you still have questions about the work of this application :grey_question: or you have cool ideas for improvement it :boom:, please write to me :email:.
 
 If you find a bug :bug:, please create an appropriate issue with detailed information about it :speech_balloon:.
 
