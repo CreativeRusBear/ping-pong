@@ -18,12 +18,12 @@ module.exports = {
 		filename: 'js/[name].bundle.js',
 	},
 	module: {
-		rules: [ 
+		rules: [
 			{
 				test: /\.js$/i,
 				exclude: '/node_modules/',
 				use: 'babel-loader',
-			}, 
+			},
 			{
 				test: /\.(png|jpe?g|svg|gif)$/i,
 				use: [
@@ -35,9 +35,9 @@ module.exports = {
 						},
 					}
 				],
-				type: 'asset/resource'	
-				
-			}, 
+				type: 'asset/resource'
+
+			},
 			{
 				test: /\.css$/i,
 				use: [
@@ -50,11 +50,11 @@ module.exports = {
 								config: path.resolve(paths.root, 'postcss.config.js'),
 							},
 							sourceMap: true,
-							
+
 						},
 					},
 				],
-			} 
+			}
 		],
 	},
 	plugins: [
