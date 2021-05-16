@@ -3,7 +3,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const copyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const mozjpeg = require('imagemin-mozjpeg');
 const pngquant = require('imagemin-pngquant');
@@ -14,38 +14,38 @@ module.exports = {
 		index: `${paths.src}/js/index.js`,
 	},
 	output: {
-		path: paths.dist,
-		filename: 'js/[name].bundle.js',
+		path     : paths.dist,
+		filename : 'js/[name].bundle.js',
 	},
 	module: {
 		rules: [
 			{
-				test: /\.js$/i,
-				exclude: '/node_modules/',
-				use: 'babel-loader',
+				test    : /\.js$/i,
+				exclude : '/node_modules/',
+				use     : 'babel-loader',
 			},
 			{
-				test: /\.(png|jpe?g|svg|gif)$/i,
-				use: [
+				test : /\.(png|jpe?g|svg|gif)$/i,
+				use  : [
 					{
 						loader  : 'file-loader',
 						options : {
 							name     : '[path][name].[ext]',
 							emitFile : false,
 						},
-					}
+					},
 				],
-				type: 'asset/resource'
+				type: 'asset/resource',
 
 			},
 			{
-				test: /\.css$/i,
-				use: [
+				test : /\.css$/i,
+				use  : [
 					MiniCssExtractPlugin.loader,
 					'css-loader',
 					{
-						loader: 'postcss-loader',
-						options: {
+						loader  : 'postcss-loader',
+						options : {
 							postcssOptions: {
 								config: path.resolve(paths.root, 'postcss.config.js'),
 							},
@@ -54,7 +54,7 @@ module.exports = {
 						},
 					},
 				],
-			}
+			},
 		],
 	},
 	plugins: [
@@ -62,7 +62,7 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
 		}),
-		new copyWebpackPlugin({
+		new CopyWebpackPlugin({
 			patterns: [
 				{
 					from : `${paths.src}/manifest.json`,
@@ -76,7 +76,7 @@ module.exports = {
 					from : `${paths.src}/img`,
 					to   : `${paths.dist}/img`,
 				},
-			]
+			],
 		}),
 		new ImageminPlugin({
 			interlaced  : true,
@@ -88,8 +88,8 @@ module.exports = {
 			],
 		}),
 		new HTMLWebpackPlugin({
-			inject: 'body',
-			template: `${paths.src}/index.html`,
+			inject   : 'body',
+			template : `${paths.src}/index.html`,
 		}),
 	],
 };

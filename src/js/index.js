@@ -26,7 +26,7 @@
  * SOFTWARE.
  *
  */
- import PingPong from './PingPong';
+import PingPong from './PingPong';
 
 window.addEventListener('load', () => {
 	if ('serviceWorker' in navigator) {
