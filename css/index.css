@@ -7,4 +7,4 @@
     color: #445360;
 }
 
-body,html{width:100%;height:100%;overflow:hidden}*,body,html{margin:0;padding:0}*{box-sizing:border-box;font-family:var(--century-gothic);font-size:70px;color:var(--white-color)}body{background:var(--black-color);display:flex;justify-content:space-around;flex-direction:column;align-items:center}#canvas{border:1px solid var(--white-color)}
+body,html{height:100%;overflow:hidden;width:100%}*,body,html{margin:0;padding:0}*{box-sizing:border-box;color:var(--white-color);font-family:var(--century-gothic);font-size:70px}body{align-items:center;background:var(--black-color);display:flex;flex-direction:column;justify-content:space-around}#canvas{border:1px solid var(--white-color)}
