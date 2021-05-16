@@ -12,7 +12,7 @@ This file describes notable changes in each version of **Ping-Pong** video game.
 
 + Webpack support has been added;
 + [jsdoc](https://creativerusbear.github.io/ping-pong/docs/) documentation has been added;
-+ [.eslintrc config](.eslintrc.json) has been added;
++ [.eslintrc config](.eslintrc) has been added;
 + new scripts in a [package.json](package.json) file have been added;
 + [ISSUE_TEMPLATE](.github/ISSUE_TEMPLATE) section has been written;
 + [CONTRIBUTING.md](CONTRIBUTING.md) file has been  written;
