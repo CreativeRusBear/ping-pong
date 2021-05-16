@@ -7,7 +7,8 @@
     "dev": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.conf.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.build.conf.js",
     "docs": "jsdoc -c jsdoc.json",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "eslint-fix": "eslint --fix --ext .js ."
   },
   "browserslist": [
     "defaults"
