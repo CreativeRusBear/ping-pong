@@ -8,7 +8,7 @@ const staticAssets = [
 
 self.addEventListener('install', async () => {
 	const cache = await caches.open('static-cache');
-	cache.addAll(staticAssets);
+	await cache.addAll(staticAssets);
 });
 
 self.addEventListener('fetch', event => {
@@ -22,7 +22,7 @@ self.addEventListener('fetch', event => {
 	}
 });
 
-async function cacheFirst (req) {
+function cacheFirst (req) {
 	const cachedResponse = caches.match(req);
 	return cachedResponse || fetch(req);
 }
@@ -32,7 +32,7 @@ async function networkFirst (req) {
 
 	try {
 		const res = await fetch(req);
-		cache.put(req, res.clone());
+		await cache.put(req, res.clone());
 		return res;
 	} catch (error) {
 		return await cache.match(req);
