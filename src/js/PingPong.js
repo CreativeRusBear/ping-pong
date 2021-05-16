@@ -55,7 +55,7 @@ export default class PingPong {
 
 	/**
 	 * @method
-	 * @description Draws a rectangular object based on the values ​​passed to the method
+	 * @description Draws a rectangular object based on the values passed to the method
 	 * @param {Number} x - abscissa
 	 * @param {Number} y - ordinate
 	 * @param {Number} width - object's width
@@ -69,7 +69,7 @@ export default class PingPong {
 
 	/**
 	 * @method
-	 * @description Draws a tennis ball based on the values ​​passed to the method
+	 * @description Draws a tennis ball based on the values passed to the method
 	 * @param {Number} x - abscissa
 	 * @param {Number} y - ordinate
 	 * @param {Number} r - radius
@@ -84,7 +84,7 @@ export default class PingPong {
 
 	/**
 	 * @method
-	 * @description Draws a necessary text based on the values ​​passed to the method
+	 * @description Draws a necessary text based on the values passed to the method
 	 * @param {Number} x - abscissa
 	 * @param {Number} y - ordinate
 	 * @param {String} text - text for visualisation
