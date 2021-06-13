@@ -1,5 +1,4 @@
 const staticAssets = [
-	'./index.html',
 	'./img/favicon.ico',
 	'./css/index.css',
 	'./js/index.bundle.js',
