@@ -30,7 +30,7 @@ It's also `Progressive Web Application` (`PWA`). So it allows you to install it 
 
 ## About application
 
-This application is created using :bookmark_tabs: :
+This application is created by using :bookmark_tabs: :
  * `HTML` - hypertext markup language;
  * `CSS` - style sheet language;
  * `JavaScript` - programming language;
@@ -43,8 +43,8 @@ You can use this application in the browser or install it as a native applicatio
 
 I will describe each of this approaches in details:
 
-1. Click on [this link](https://corocoto.github.io/ping-pong/) or copy url `https://corocoto.github.io/ping-pong/` and paste it in the search field in the browser
-2. You should to click on installation button (you can see it on the right side of search field), if you want to install it as a native application: 
+1. Click on [this link](https://corocoto.github.io/ping-pong/) or copy url `https://corocoto.github.io/ping-pong/` and paste it into the search field in the browser
+2. If you want to install application as native, you should to click on installation button (you can see it on the right side of search field):
 
 ![installation button](https://user-images.githubusercontent.com/37180024/111022601-b2c57800-83e4-11eb-81ea-1dcd86a7e21c.png)
 
