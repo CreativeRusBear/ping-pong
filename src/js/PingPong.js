@@ -15,17 +15,8 @@ export default class PingPong {
 	constructor (id, ctx) {
 		this.canvas = document.getElementById(id);
 		this.ctx = this.canvas.getContext(ctx);
-		this.generateObjs();
-		this.canvas.addEventListener('mousemove', this.moveRacket.bind(this));
-	}
 
-	/**
-	 * @method
-	 * @description Generate objects, like as user's and computer's rackets, also tennis ball
-	 */
-	generateObjs () {
-		// User's racket
-		this.user = {
+		this.userRacquet = {
 			x      : 0,
 			y      : this.canvas.height / 2 - 200 / 2,
 			width  : 20,
@@ -33,8 +24,8 @@ export default class PingPong {
 			color  : 'white',
 			score  : 0,
 		};
-		// Computer's racket
-		this.comp = {
+
+		this.computerRacquet = {
 			x      : this.canvas.width - 20,
 			y      : this.canvas.height / 2 - 200 / 2,
 			width  : 20,
@@ -42,6 +33,7 @@ export default class PingPong {
 			color  : 'white',
 			score  : 0,
 		};
+
 		this.ball = {
 			x         : this.canvas.width / 2,
 			y         : this.canvas.height / 2,
@@ -51,6 +43,10 @@ export default class PingPong {
 			velocityY : 5,
 			color     : 'white',
 		};
+
+		this.moveRacket = this.moveRacket.bind(this);
+    this.renderer = this.renderer.bind(this);
+		this.canvas.addEventListener('mousemove', this.moveRacket);
 	}
 
 	/**
@@ -120,7 +116,7 @@ export default class PingPong {
 	 */
 	moveRacket (event) {
 		const rect = this.canvas.getBoundingClientRect();
-		this.user.y = event.clientY - rect.top - this.user.height / 2;
+		this.userRacquet.y = event.clientY - rect.top - this.userRacquet.height / 2;
 	}
 
 	/**
@@ -167,11 +163,17 @@ export default class PingPong {
 		this.update();
 		this.drawRect(0, 0, this.canvas.width, this.canvas.height, 'black');
 		this.drawNet(25, 10, 'white');
-		this.drawText(this.canvas.width / 4, this.canvas.height / 5, this.user.score, 'white');
-		this.drawText(3 * this.canvas.width / 4, this.canvas.height / 5, this.comp.score, 'white');
+		this.drawText(this.canvas.width / 4, this.canvas.height / 5, this.userRacquet.score, 'white');
+		this.drawText(3 * this.canvas.width / 4, this.canvas.height / 5, this.computerRacquet.score, 'white');
 		this.drawCircle(this.ball.x, this.ball.y, this.ball.r, 'white');
-		this.drawRect(this.user.x, this.user.y, this.user.width, this.user.height, 'white');
-		this.drawRect(this.comp.x, this.comp.y, this.comp.width, this.comp.height, 'white');
+		this.drawRect(this.userRacquet.x, this.userRacquet.y, this.userRacquet.width, this.userRacquet.height, 'white');
+		this.drawRect(
+      this.computerRacquet.x,
+			this.computerRacquet.y,
+			this.computerRacquet.width,
+			this.computerRacquet.height,
+			'white',
+		);
 		requestAnimationFrame(this.renderer.bind(this));
 	}
 
@@ -184,13 +186,13 @@ export default class PingPong {
 		this.ball.y += this.ball.velocityY;
 		// Ai for computer's racket
 		const compLVL = 0.1;
-		this.comp.y += (this.ball.y - (this.comp.y + this.comp.height / 2)) * compLVL;
+		this.computerRacquet.y += (this.ball.y - (this.computerRacquet.y + this.computerRacquet.height / 2)) * compLVL;
 
 		// Kick the ball against the top or bottom wall
 		if (this.ball.y + this.ball.r > this.canvas.height || this.ball.y - this.ball.r < 0) {
 			this.ball.velocityY = -this.ball.velocityY;
 		}
-		const player = this.ball.x < this.canvas.width / 2 ? this.user : this.comp;
+		const player = this.ball.x < this.canvas.width / 2 ? this.userRacquet : this.computerRacquet;
 		if (this.collision(this.ball, player)) {
 			// Ball hit the player's racket
 			let collidePoint = this.ball.y - (player.y + player.height / 2);
@@ -212,10 +214,10 @@ export default class PingPong {
 		}
 		// Update score
 		if (this.ball.x - this.ball.r < 0) {
-			this.comp.score++;
+			this.computerRacquet.score++;
 			this.reset();
 		} else if (this.ball.x + this.ball.r > this.canvas.width) {
-			this.user.score++;
+			this.userRacquet.score++;
 			this.reset();
 		}
 	}
