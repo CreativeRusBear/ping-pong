@@ -45,7 +45,7 @@ export default class PingPong {
 		};
 
 		this.moveRacket = this.moveRacket.bind(this);
-    this.renderer = this.renderer.bind(this);
+		this.renderer = this.renderer.bind(this);
 		this.canvas.addEventListener('mousemove', this.moveRacket);
 	}
 
@@ -168,7 +168,7 @@ export default class PingPong {
 		this.drawCircle(this.ball.x, this.ball.y, this.ball.r, 'white');
 		this.drawRect(this.userRacquet.x, this.userRacquet.y, this.userRacquet.width, this.userRacquet.height, 'white');
 		this.drawRect(
-      this.computerRacquet.x,
+			this.computerRacquet.x,
 			this.computerRacquet.y,
 			this.computerRacquet.width,
 			this.computerRacquet.height,
