@@ -1,3 +1,6 @@
+# Ping-pong
+
+[![eslint check](https://github.com/corocoto/ping-pong/workflows/eslint-check/badge.svg)](https://github.com/corocoto/ping-pong/actions)
 ![GitHub language count](https://img.shields.io/github/languages/count/corocoto/ping-pong)
 ![GitHub top language](https://img.shields.io/github/languages/top/corocoto/ping-pong)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/corocoto/ping-pong)
@@ -9,18 +12,6 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/corocoto/ping-pong)
 ![GitHub](https://img.shields.io/github/license/corocoto/ping-pong)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/corocoto/ping-pong)
-
-```
- ____                                         ____                            
-/\  _`\   __                                 /\  _`\                          
-\ \ \L\ \/\_\    ___      __                 \ \ \L\ \___     ___      __     
- \ \ ,__/\/\ \ /' _ `\  /'_ `\      _______   \ \ ,__/ __`\ /' _ `\  /'_ `\   
-  \ \ \/  \ \ \/\ \/\ \/\ \L\ \    /\______\   \ \ \/\ \L\ \/\ \/\ \/\ \L\ \  
-   \ \_\   \ \_\ \_\ \_\ \____ \   \/______/    \ \_\ \____/\ \_\ \_\ \____ \ 
-    \/_/    \/_/\/_/\/_/\/___L\ \                \/_/\/___/  \/_/\/_/\/___L\ \
-                          /\____/                                      /\____/
-                          \_/__/                                       \_/__/
-```
 
 ## Introduction
 
